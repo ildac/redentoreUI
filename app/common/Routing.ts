@@ -6,9 +6,12 @@ module common {
 		
 		public static $inject = ['$routeProvider'];
 		constructor ($routeProvider: ng.route.IRouteProvider){
-			$routeProvider.when("/", { templateUrl: "views/courses.html"} );
+			$routeProvider
+				.when("/", { 
+					templateUrl: "views/courses.html"
+				}
+			);
 		}
-		 
 	}
 	
 	app.module.register.config(Routing);
